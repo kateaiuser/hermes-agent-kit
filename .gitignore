@@ -5,14 +5,10 @@
 *.key
 *.pem
 
-# Telegram-мост: нить разговоров (служебное)
-sessions.json
-
-# Живой дом агента, если кто-то по ошибке создал его ВНУТРИ репозитория.
-# Правильное место — снаружи (например ~/hermes). Эти правила — страховка.
-/live/
-/hermes/
-*.local.md
+# Личное / рантайм Hermes (на случай, если кто-то положит ~/.hermes рядом)
+.hermes/
+memories/
+auth.json
 
 # ОС и редакторы
 .DS_Store
@@ -20,9 +16,3 @@ Thumbs.db
 .idea/
 .vscode/
 *.swp
-
-# Python (если приделают Telegram-мост)
-__pycache__/
-.venv/
-venv/
-*.pyc
